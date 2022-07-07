@@ -1,0 +1,75 @@
+.itemEditSell {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 2rem;
+
+	button {
+		padding: 10px;
+		background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%);
+		font-size: 1rem;
+		color: white;
+		font-weight: 500;
+		border-radius: 50px;
+		min-width: 120px;
+		height: 35px;
+		border: white;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+}
+
+.priceFieldWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.serviceChargesWrap {
+	.primary {
+		padding: 5px 0 5px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		font-size: larger;
+		font-weight: 500;
+	}
+	.secondary {
+		padding: 5px 0 5px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 500;
+		color: #c4b8d6;
+	}
+}
+
+.priceAlert {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+
+	.alert {
+		color: red;
+		font-size: small;
+	}
+
+	.priceConvert {
+		color: #c4b8d6;
+		font-size: small;
+	}
+}
+
+.selectPriceSymbol {
+	width: 12rem !important;
+}
+.categoryRoW {
+  margin-bottom: 50px;
+  .inputWrp {
+    margin-bottom: 0px;
+
+    .MuiOutlinedInput-root {
+      border: 3px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 10px !important;
+    }
+  }
+}

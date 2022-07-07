@@ -1,0 +1,322 @@
+.createBtn{
+	background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%) !important;
+	color: #ffffff !important;
+    min-width: 180px !important;
+    height: 37px !important;
+    display: inline-block !important;
+    border-radius: 54px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+}
+
+.bannerArea {
+  padding: 40px 0;
+  // background: linear-gradient(0deg, #2e105e 0%, rgb(48 18 96) 137.1%);
+  background-image: url("/images/banner-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .bannerContent {
+    width: 70%;
+    margin-top: 140px;
+    h1 {
+      color: white;
+      font-size: 72px;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+  }
+  .bannerIconBox {
+    width: 30%;
+    padding-left: 70px;
+  }
+}
+
+.bannerSlider {
+  overflow-x: hidden;
+  margin-top: 60px;
+  .collectionLink {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    span {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 40px;
+      margin-left: 20px;
+      text-align: center;
+    }
+  }
+  .sliderWrpBox {
+    .cardSlider {
+      position: relative;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      transform: scale(0.91);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(0.95);
+        transition: all 0.2s ease-in-out;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 0px 15px white;
+        bottom: 0;
+        background: white;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover:after {
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover .sliderBtmInfo {
+        opacity: 1;
+      }
+
+      figure {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        z-index: 99;
+        img {
+          max-width: 100%;
+          margin: auto;
+          width: 100%;
+        }
+      }
+
+      .sliderBtmInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        z-index: 9;
+        opacity: 0;
+
+        .media {
+          display: flex;
+          align-items: center;
+          figure {
+            width: 68px;
+            height: 68px;
+            min-width: 68px;
+            min-height: 68px;
+            border-radius: 100%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .media_body {
+            margin-left: 20px;
+            h5 {
+              margin: 0;
+              // font-weight: bold;
+              // font-size: 20px;
+              letter-spacing: -0.01em;
+              color: #09061c;
+              word-break: break-word;
+              padding-right: 10px;
+            }
+            p {
+              margin: 0;
+              font-weight: normal;
+              font-size: 14px;
+              color: #09061c;
+              opacity: 0.5;
+            }
+          }
+        }
+         .right button {
+          // width: 200.19px;
+          // height: 50px;
+          // background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%);
+          // border-radius: 500px;
+          // font-weight: 700;
+          // font-size: 14px;
+          // color: white;
+          width: 125px;
+    height: 40px;
+    background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%);
+    border-radius: 500px;
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1580px) {
+  .bannerArea {
+    .bannerContent {
+      width: 70%;
+      h1 {
+        font-size: 62px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .bannerArea {
+    background-position: -530px;
+    // background-position: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bannerArea {
+    background-position: -500px;
+    .bannerContent {
+      h1 {
+        font-size: 52px;
+      }
+    }
+    .bannerIconBox {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .bannerSlider {
+    .collectionLink {
+    }
+    .sliderWrpBox {
+      .cardSlider {
+        transform: scale(0.95);
+        figure {
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative;
+          z-index: 99;
+          img {
+            max-width: 100%;
+            margin: auto;
+            width: 100%;
+          }
+        }
+
+        .sliderBtmInfo {
+          .media {
+            figure {
+              width: 58px;
+              height: 58px;
+              min-width: 58px;
+              min-height: 58px;
+            }
+
+            .media_body {
+              h5 {
+                font-size: 18px;
+              }
+            }
+          }
+          .right button {
+            width: 200.19px;
+            height: 50px;
+            background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%);
+            border-radius: 500px;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .bannerArea {
+    background-position: 72%;
+  }
+}
+@media (max-width: 767px) {
+  .bannerArea {
+    background-image: url(/images/mobile-banner.png);
+
+    background-position: center -210px;
+
+    .bannerContent {
+      margin-top: 300px;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 32px;
+        font-size: 32px;
+        max-width: 340px;
+        margin: auto;
+        position: relative;
+        top: 40px;
+      }
+    }
+  }
+
+  .bannerSlider {
+   
+    
+    .sliderWrpBox {
+      .cardSlider {
+        transform: scale(0.8) !important;
+        &:after {
+          content: "";
+         opacity: 1;
+        }
+      
+        .sliderBtmInfo {
+          z-index: 99;
+          opacity: 1;
+          .media {
+            figure {
+              width: 45px;
+              height: 45px;
+              min-width: 45px;
+              min-height: 45px;
+            }
+          }
+          .right {
+            position: absolute;
+            top: -51px;
+            z-index: 999999;
+            right: 10px;
+            button {
+              width: 170.19px;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .bannerArea {
+    background-position: center -240px;
+  }
+}
+

@@ -1,0 +1,100 @@
+.connectWalletWrp {
+  max-width: 1060px;
+  margin: auto;
+  padding-bottom: 120px;
+  .polygonListingRow {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      width: 100%;
+      display: table;
+    }
+    .list {
+      cursor: pointer;
+      width: calc(96.1% / 2);
+      display: flex;
+      justify-content: space-between;
+      float: left;
+      border-radius: 15px;
+      align-items: center;
+      height: 60px;
+      padding: 0 15px 0 30px;
+      float: left;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      &:nth-child(2n) {
+        margin-right: 0 !important;
+      }
+      &:hover {
+        box-shadow: -1px 0px 5px 0px #00000033;
+      }
+      .logo {
+        figure {
+          min-width: 240px;
+          img {
+            display: block;
+          }
+        }
+      }
+      .rightAngle {
+        svg {
+          color: rgb(255 255 255 / 40%);
+          vertical-align: middle;
+          font-size: 32px;
+        }
+      }
+    }
+    .bg1 {
+      .list {
+        background: #451d5d;
+      }
+    }
+
+    .bg2 {
+      .list {
+        background: #2d176c;
+      }
+    }
+
+    .bg3 {
+      .list {
+        background: #301f6f;
+      }
+    }
+
+    .bg4 {
+      .list {
+        background: #3b1e5f;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .connectWalletWrp {
+    .polygonListingRow {
+      .list {
+        width: calc(90.1% / 2);
+      }
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .connectWalletWrp {
+    padding-bottom: 60px;
+    .polygonListingRow {
+      margin-top: 40px;
+      .list {
+        width: 100%;
+        margin-right: 0;
+        .logo {
+          figure {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

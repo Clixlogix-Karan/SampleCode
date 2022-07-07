@@ -1,0 +1,1 @@
+'https://nft-user.clixlogix.org/api/v1'

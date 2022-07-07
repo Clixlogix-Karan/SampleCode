@@ -1,0 +1,539 @@
+.customContainer {
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+}
+
+.headerRow {
+	display: flex;
+
+	.logoBox {
+		width: 9.7%;
+		min-width: 170px;
+		margin-top: 10px;
+	}
+
+	.searchFormBox {
+		flex: 1;
+		margin: 4px 0px 0px;
+	}
+}
+
+.headerBg {
+	padding: 20px 0;
+	// background: #301260;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.searchRow {
+	position: relative;
+	display: flex;
+	width: 100%;
+	align-items: center;
+
+	.searchIcon {
+		position: absolute;
+		z-index: 9;
+		left: 40px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		vertical-align: middle;
+		display: table;
+		min-height: 50px;
+		line-height: 50px;
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	input {
+		color: white !important;
+		font-weight: 500;
+		font-size: 14px;
+		padding-left: 80px;
+		z-index: 9;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		min-height: 50px;
+		line-height: 50px;
+
+		&::placeholder {
+			font-size: 14px;
+		}
+	}
+
+	.textFieldRadius {
+		width: 100%;
+
+		fieldset {
+			border-radius: 50px !important;
+			background: #ffffff;
+			opacity: 0.1;
+			border: 0;
+		}
+	}
+}
+
+.boxCard {
+	// background: linear-gradient(90deg, #8b46ff29 48.33%, #cf46ff36 100%);
+	border-radius: 15px;
+	width: 100%;
+	padding: 15px 0px;
+		border-bottom: 2px solid rgba(78, 35, 149, 0.168627451);
+	border-radius: 0px;
+}
+
+.AddCardBtn {
+	position: relative !important;
+	top: 33px !important;
+	display: block !important;
+	margin: auto !important;
+	background: #322560 !important;
+	color: #ffff !important;
+	border-radius: 50px !important;
+	padding: 7px 10px 2px 10px !important;
+	width: 250px !important;
+}
+
+
+.headerMenuBtn {
+	color: #322560 !important;
+	float: right;
+	background: white;
+	border-radius: 100px;
+	margin-left: 13px;
+	height: 30px;
+	font-size: 12px;
+	box-shadow: 5px 5px 8px #e9dcf4;
+}
+
+.countBadge{
+	position: relative;
+    top: 14px;
+    bottom: 0;
+    left: 2px;
+    z-index: 99;
+    background: #c574fb;
+    padding: 5px 8px;
+    border-radius: 49px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.siteNav {
+	text-align: right;
+
+	ul {
+		li {
+			display: inline-block;
+			margin-right: 45px;
+		
+
+			&:last-child {
+				margin-right: 0 !important;
+			}
+
+			.navLink {
+				font-weight: 500;
+				font-size: 16px;
+				color: white;
+				cursor: pointer;
+				display: block;
+
+				&:hover {
+					background: -webkit-linear-gradient(#c846ff, #8b47ff);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+
+				svg {
+					vertical-align: middle;
+				}
+			}
+
+			a[aria-expanded="true"] {
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		.uerProfile {
+			position: relative;
+
+			div {
+				background: #391771;
+				width: 50px;
+				height: 40px;
+				box-shadow: 1px 1px 0px 0px #ffffff38;
+			}
+
+			.profileTabViewer {
+				background-color: #ffffff;
+				position: absolute;
+				height: 25rem;
+				width: 22rem;
+				right: 30px;
+				top: 60px;
+				z-index: 9999;
+				// border-radius: 30px 0 30px 30px;
+
+				.profileTabViewWrapper {
+					background-color: white !important;
+					height: 22rem !important;
+					padding: 20px;
+					background-color: inherit;
+					width: inherit !important;
+					height: 20rem;
+					border-radius: 30px 0 30px 30px;
+
+					.addressWrapper {
+						background-color: inherit;
+						padding: 10px 20px 10px 10px;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						border-bottom: 2px solid #4e23952b;
+						width: 100%;
+
+						.profileAddress {
+							background-color: inherit;
+							font-style: italic;
+							color: rgb(50 37 96);
+						}
+
+						.copyAddressIcon {
+							cursor: pointer;
+						}
+					}
+
+					.contentWrapper {
+						background-color: inherit;
+							display: flex;
+							flex-direction: column;
+							margin-left: 40px;
+							margin-top: -10px;
+
+					}
+				}
+
+				.myProfileWrapper {
+					background-color: inherit;
+					width: auto;
+					padding: 10px !important;
+					display: flex;
+					justify-content: space-between;
+					color: rgb(50, 37, 96);
+					align-items: center;
+
+					.myProfile {
+						display: flex;
+						width: max-content !important;
+						background-color: inherit;
+						align-items: center;
+
+						.myProfileText {
+							font: 100;
+							font-size: large;
+							margin-bottom: 5px;
+						}
+					}
+
+					.editProfileIcon {
+						font-size: x-large;
+						cursor: pointer;
+					}
+				}
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+
+				.signOutText {
+					padding: 5px;
+					margin-bottom: 5px;
+					font-size: larger;
+					font-weight: 600;
+					color: red;
+					cursor: pointer;
+				}
+			}
+
+			.profileTabViewer1 {
+				background-color: #ffffff;
+				position: absolute;
+				height: 25rem;
+				width: 22rem;
+				right: 30px;
+				top: 60px;
+				z-index: 9999;
+				--scrollbarBG: #CFD8DC;
+				--thumbBG: #2d2258;
+				// border-radius: 30px 0 30px 30px;
+
+				.profileTabViewWrapper {
+					background-color: white !important;
+					height: 22rem !important;
+					padding: 20px;
+					background-color: inherit;
+					width: inherit !important;
+					height: 20rem;
+					border-radius: 30px 0 30px 30px;
+					overflow-y: auto;
+					scrollbar-width: thin;
+					scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+					.addressWrapper {
+						background-color: inherit;
+						padding: 10px 20px 10px 10px;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						border-bottom: 2px solid #4e23952b;
+						width: 100%;
+
+						.profileAddress {
+							background-color: inherit;
+							font-style: normal;
+							color: rgb(50 37 96);
+							font-size: 14px;
+						}
+
+						.copyAddressIcon {
+							cursor: pointer;
+						}
+					}
+
+					.contentWrapper {
+						background-color: transparent;
+							display: flex;
+							flex-direction: column;
+							margin-left: 40px;
+							margin-top: 25px;
+							position: absolute;
+							bottom: 40px;
+
+					}
+				}
+
+				.profileTabViewWrapper::-webkit-scrollbar-track {
+					background: var(--scrollbarBG);
+				  }
+
+				  .profileTabViewWrapper {
+					--scrollbarBG: #CFD8DC;
+					--thumbBG: #2d2258;
+				  }
+				  .profileTabViewWrapper::-webkit-scrollbar {
+					width: 11px;
+				  }
+				  .profileTabViewWrapper {
+					scrollbar-width: thin;
+					scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+				  }
+
+				  .profileTabViewWrapper::-webkit-scrollbar-thumb {
+					background-color: var(--thumbBG) ;
+					border-radius: 6px;
+					border: 3px solid var(--scrollbarBG);
+				  }
+
+				.myProfileWrapper {
+					background-color: inherit;
+					width: auto;
+					padding: 10px !important;
+					display: flex;
+					justify-content: space-between;
+					color: rgb(50, 37, 96);
+					align-items: center;
+
+					.myProfile {
+						display: flex;
+						width: max-content !important;
+						background-color: inherit;
+						align-items: center;
+
+						.myProfileText {
+							font: 100;
+							font-size: large;
+							margin-bottom: 5px;
+						}
+					}
+
+					.editProfileIcon {
+						font-size: x-large;
+						cursor: pointer;
+					}
+				}
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+
+				.signOutText {
+					padding: 5px;
+					margin-bottom: 5px;
+					font-size: larger;
+					font-weight: 600;
+					color: red;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.searchFormBox {
+		display: none;
+	}
+}
+
+.connectWalletBtn {
+	margin-right: 15px !important;
+
+	a {
+		background: linear-gradient(90deg, #8b46ff 48.33%, #cf46ff 100%);
+		min-width: 180px;
+		height: 46px;
+		display: inline-block;
+		border-radius: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 16px;
+		color: white;
+
+		&:hover {
+			box-shadow: 0px -1px 6px 1px #00000073;
+		}
+	}
+}
+
+.togglebx {
+	position: absolute;
+	right: 0px;
+	display: none;
+
+	button {
+		padding: 0;
+
+		img {
+			max-width: 50px;
+		}
+	}
+}
+
+@media (max-width: 1580px) {
+	.customContainer {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.customContainer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.headerRow {
+		.searchFormBox {
+			flex: 1;
+			margin: 0 20px 0 20px;
+		}
+	}
+
+	.siteNav {
+		text-align: right;
+
+		ul {
+			li {
+				margin-right: 10px;
+
+				.navLink {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.connectWalletBtn {
+		a {
+			font-size: 14px;
+			min-width: 140px;
+			height: 45px;
+			line-height: 45px;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.siteNav {
+		text-align: left;
+		padding-top: 130px;
+
+		ul {
+			padding-top: 20px;
+
+			li {
+				display: block;
+				margin-right: 0px;
+				padding: 20px 0;
+				border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+				.navLink {
+					font-size: 16px;
+					padding: 0 20px;
+				}
+			}
+
+			.uerProfile {
+				div {
+					margin-left: 15px;
+				}
+			}
+		}
+
+		.searchFormBox {
+			display: block !important;
+		}
+	}
+
+	.connectWalletBtn {
+		margin-right: 0 !important;
+
+		a {
+			margin-left: 15px;
+		}
+	}
+
+	.togglebx {
+		display: block;
+	}
+
+	.headerRow {
+		.searchFormBox {
+			display: none;
+		}
+	}
+
+	.connectWalletBtn {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.customContainer {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

@@ -1,0 +1,845 @@
+.profiletabContainer {
+  padding-bottom: 70px;
+  height: auto;
+}
+.profilpanelContainer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+}
+.expolreBannerTop {
+  padding-bottom: 50px;
+  background: #54259e;
+  border-radius: 30px;
+  overflow: hidden;
+  .exloreImage {
+    figure {
+      background: url(/images/explore-banner.png);
+      filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.25));
+
+      overflow: hidden;
+      width: 100%;
+      padding-top: 20%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  .exploreBtmInfo {
+    margin-top: -75px;
+    position: relative;
+    z-index: 5;
+    .userProfilInfo {
+      text-align: center;
+      figure {
+        width: 190px;
+        height: 190px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 15px solid rgba(46, 16, 91, 0.02);
+        backdrop-filter: blur(34px);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h3 {
+        color: white;
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        span {
+          width: 31px;
+          margin-left: 15px;
+        }
+      }
+      h4 {
+        color: white;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        strong {
+          display: inline-block;
+          padding-left: 5px;
+        }
+        span {
+          width: 31px;
+          margin-left: 15px;
+        }
+      }
+    }
+    .userlisting {
+      color: white;
+      overflow: hidden;
+      max-width: 940px;
+      background: #3b1478;
+      border: 1px solid #4b1899;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px auto;
+    }
+    .listInfoDis {
+      padding-top: 20px;
+      max-width: 595px;
+      margin: auto;
+      p {
+        color: #ffffff !important;
+        opacity: 0.6;
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.5;
+        span {
+        color: #ffffff !important;
+      }
+      }
+    }
+  }
+}
+
+.searchFormBox {
+  margin-right: 60px;
+  width: 220px;
+}
+.searchRow {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  .searchIcon {
+    position: absolute;
+    z-index: 9;
+    left: 22px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+    display: table;
+    min-height: 50px;
+    line-height: 50px;
+    opacity: 0.5;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+  input {
+    color: white !important;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 55px;
+    z-index: 9;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 50px;
+    line-height: 50px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .textFieldRadius {
+    width: 100%;
+
+    fieldset {
+      border-radius: 50px !important;
+      background: #ffffff;
+      opacity: 0.1;
+      border: 0;
+    }
+  }
+}
+
+.collectionArea {
+  overflow: hidden;
+
+  .collectionItemWrp {
+    float: left;
+    width: 100% !important;
+    // margin-right: 1.5%;
+    float: left;
+    // margin-bottom: 55px;
+    background: #54259e;
+    border-radius: 20px;
+    overflow: hidden;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    .imgWrp {
+      .mainImg {
+        img {
+          width: 100%;
+        }
+      }
+      .btmImg {
+        width: 90px;
+        height: 90px;
+        border-radius: 70px;
+        overflow: hidden;
+        margin-top: -50px;
+        overflow: hidden;
+        border: 10px solid rgba(255, 255, 255, 0.01);
+        -webkit-backdrop-filter: blur(34px);
+        backdrop-filter: blur(13px);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .collectionDetail {
+      padding: 20px 20px 25px;
+      h3 {
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      h4 {
+        font-weight: 300;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+        color: #ffffff;
+        span {
+          display: inline-block;
+          margin-left: 5px;
+        }
+        strong {
+          font-weight: 500;
+          padding-left: 2px;
+        }
+      }
+      p {
+        font-weight: 300;
+        margin: 0;
+        color: #ffffff;
+        font-size: 13px;
+        margin-top: 10px;
+        opacity: 0.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 40px;
+      }
+    }
+  }
+  .morecollectionRow {
+    max-width: 70%;
+    clear: both;
+    margin: auto;
+    margin-bottom: 70px;
+    button {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      padding: 10px 0;
+      position: relative;
+      text-transform: inherit;
+      width: 100%;
+      margin-top: 20px;
+      &::after {
+        content: "";
+        border-radius: 10px;
+        background: linear-gradient(45deg, #8b46ff, #c331ff);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0) !important;
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 3px;
+        top: -4px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.activityGraphRow {
+  background: #ffffff;
+  border-radius: 35px;
+  padding: 30px;
+  .activityTOp {
+    margin-bottom: 60px;
+    .activitybx {
+      padding-right: 20px;
+      margin-right: 20px;
+      &:first-child {
+        border-right: 2px solid #2e105d12;
+      }
+      span {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #2e105d;
+      }
+      strong {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #2e105d;
+      }
+    }
+  }
+  .activityGrapWrp {
+    figure {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.morecollectionRow {
+  max-width: 70%;
+  clear: both;
+  margin: auto;
+  margin-bottom: 70px;
+  button {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    text-transform: inherit;
+    width: 100%;
+    margin-top: 20px;
+    &::after {
+      content: "";
+      border-radius: 10px;
+      background: linear-gradient(45deg, #8b46ff, #c331ff);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 3px;
+      top: -4px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+.profileTableData {
+  margin-bottom: 60px;
+  //   overflow: hidden;
+  border-radius: 35px;
+  margin-top: 50px;
+  overflow: hidden;
+  table {
+    thead {
+      background: #8b46ff;
+
+      tr {
+        th {
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: -0.01em;
+          padding: 10px 30px;
+          color: #ffffff;
+          height: 80px;
+          border: 0;
+          &:first-child {
+            border-top-left-radius: 35px;
+          }
+          &:last-child {
+            border-top-right-radius: 35px;
+          }
+          .emptyCell {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(even) td {
+          background-color: #f8f4ff;
+        }
+
+        td {
+          font-weight: 500;
+          font-size: 16px;
+          color: #2e105d;
+          border: 0;
+          background-color: #fff;
+          padding: 10px 30px;
+
+          .itemRow {
+            display: flex;
+            align-items: center;
+            .itemImg {
+              figure {
+                width: 50px;
+                height: 50px;
+                border-radius: 15px;
+                overflow: hidden;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .iteContent {
+              margin-left: 10px;
+              h5 {
+                font-size: 10px;
+                font-weight: 400;
+                margin-bottom: 2px;
+              }
+              p {
+                font-weight: 500;
+                font-size: 14px;
+              }
+            }
+          }
+          .trnsfrIcon {
+            display: inline-block;
+            margin-right: 5px;
+          }
+          .priceContent {
+            strong {
+              color: #b1a4c6;
+              font-weight: 500;
+            }
+          }
+          .toContent {
+            span {
+              white-space: nowrap;
+              width: 115px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: inline-block;
+              color: #8b46ff;
+            }
+          }
+          .timebx {
+            a {
+              line-height: 1;
+              display: inline-block;
+              margin-left: 10px;
+            }
+          }
+          .blueText {
+            color: #8b46ff !important;
+          }
+        }
+      }
+    }
+  }
+}
+.settingTopRow {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  .profileChnageBox {
+    figure {
+      width: 250px;
+      height: 250px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .bannerUploadBox {
+    figure {
+      width: 372px;
+      height: 250px;
+      border-radius: 30px;
+      margin: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .brdrVertical {
+    width: 3px;
+    height: 192px;
+    background: #58407d;
+    align-self: center;
+    margin: 0 60px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .profilpanelContainer {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .collectionArea {
+    .collectionItemWrp {
+      .collectionDetail {
+        h3 {
+          font-size: 22px;
+          span {
+            display: inline-block;
+            margin-left: 5px;
+            img {
+              width: 25px;
+            }
+          }
+        }
+        h4 {
+          font-size: 14px;
+
+          span {
+            img {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    .morecollectionRow {
+      max-width: 80%;
+
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .expolreBannerTop {
+    .exloreImage {
+      figure {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .exploreBtmInfo {
+      .userProfilInfo {
+        h3 {
+          font-size: 32px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+      .userlisting {
+        ul {
+          li {
+            .listWrp {
+              label {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .listInfoDis {
+        max-width: 595px;
+        margin: auto;
+        p {
+          color: #ffffff;
+          opacity: 0.6;
+          text-align: center;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .profileTableData {
+    table {
+      thead {
+        tr {
+          th {
+            font-size: 16px;
+            padding: 10px 25px;
+            white-space: nowrap;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 14px;
+            padding: 10px 25px;
+            white-space: nowrap;
+            .toContent {
+              img {
+                max-width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .activityGraphRow {
+    .activityTOp {
+      .activitybx {
+        strong {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .collectionArea {
+    .collectionItemWrp {
+      width: calc(97% / 3);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(4n) {
+        margin-right: 1.5%;
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .expolreBannerTop {
+    .exloreImage {
+      figure {
+        padding-top: 25%;
+      }
+    }
+    .exploreBtmInfo {
+      .userProfilInfo {
+        figure {
+          width: 150px;
+          height: 150px;
+          margin: auto;
+          overflow: hidden;
+          border-radius: 100%;
+          border: 10px solid rgba(46, 16, 91, 0.02);
+        }
+      }
+      .userlisting {
+        color: white;
+        overflow: hidden;
+        max-width: 940px;
+        background: #3b1478;
+        border: 1px solid #4b1899;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 30px auto;
+      }
+      .listInfoDis {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .expolreBannerTop {
+    .exloreImage {
+      figure {
+        padding-top: 30%;
+      }
+    }
+    .exploreBtmInfo {
+      .userProfilInfo {
+        h3 {
+          font-size: 26px;
+          span {
+            img {
+              max-width: 25px;
+            }
+          }
+        }
+        h4 {
+          font-size: 16px;
+          span {
+            img {
+              max-width: 25px;
+            }
+          }
+        }
+      }
+
+      .listInfoDis {
+        max-width: 595px;
+        margin: auto;
+        p {
+          color: #ffffff;
+          opacity: 0.6;
+          text-align: center;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .settingTopRow {
+    display: block;
+    margin: inherit;
+    margin-top: 100px;
+    h3 {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .profileChnageBox {
+      margin-bottom: 40px;
+      figure {
+        width: 250px;
+        height: 250px;
+
+        margin: inherit;
+      }
+    }
+    .bannerUploadBox {
+      figure {
+        width: 292px;
+        height: 200px;
+        margin: inherit;
+      }
+    }
+    .brdrVertical {
+      display: none;
+    }
+  }
+
+  .profilpanelContainer {
+    margin-bottom: 40px;
+  }
+
+  .searchFormBox {
+    display: none;
+  }
+
+  .collectionArea {
+    .collectionItemWrp {
+      width: calc(100% / 1);
+      margin-right: 0 !important;
+      margin-bottom: 20px;
+    }
+    p {
+      opacity: 1 !important;
+    }
+  }
+  .expolreBannerTop {
+    .exloreImage {
+      figure {
+        padding-top: 25%;
+      }
+    }
+    .exploreBtmInfo {
+      .userProfilInfo {
+        figure {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .userlisting {
+        color: white;
+        overflow: hidden;
+        max-width: 940px;
+        background: #3b1478;
+        border: 1px solid #4b1899;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 30px auto;
+      }
+      .listInfoDis {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .activityGraphRow {
+    .activityTOp {
+      margin-bottom: 60px;
+      .activitybx {
+        padding-right: 14px;
+        margin-right: 14px;
+
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .expolreBannerTop {
+    padding-bottom: 50px;
+    .exloreImage {
+      figure {
+        padding-top: 60%;
+        border-radius: 14px;
+      }
+    }
+    .exploreBtmInfo {
+      margin-top: -45px;
+      .userProfilInfo {
+        h3 {
+          font-size: 22px;
+          span {
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+        h4 {
+          font-size: 14px;
+          span {
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

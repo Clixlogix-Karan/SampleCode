@@ -1,0 +1,123 @@
+.chooseTypeContainer {
+  padding-bottom: 70px;
+}
+.chooseHeadingBox {
+  max-width: 647px;
+  margin: 40px auto auto auto;
+  text-align: center;
+}
+
+.chooseTypeBox{
+  background: #4b1899;
+    padding: 15px 16px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.chooseTypeRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .typeText {
+    max-width: 340px;
+    h3 {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      opacity: 0.5;
+      line-height: 1.5;
+    }
+  }
+  .singleType,
+  .multipleType {
+    width: 35%;
+
+    border-radius: 20px;
+    background: rgb(255 255 255 / 4%);
+    padding: 40px 45px;
+    margin: 20px;
+    background-image: url("/images/box.png");
+    background-size: cover;
+    // background-position: top center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 10px 1px #00000052;
+    }
+  }
+  .typeImgWrp {
+    text-align: right;
+  }
+}
+
+@media (max-width: 1380px) {
+  .chooseTypeRow {
+    .typeText {
+      max-width: 340px;
+    }
+    .singleType,
+    .multipleType {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .chooseTypeRow {
+    .typeText {
+      max-width: 340px;
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .singleType,
+    .multipleType {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .chooseTypeRow {
+    .typeText {
+      max-width: 340px;
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .singleType,
+    .multipleType {
+      width: 45%;
+      padding: 10px 25px;
+      margin: 15px;
+    }
+    .typeImgWrp {
+      img {
+        max-width: 100px;
+        position: relative;
+        top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .chooseTypeRow {
+    padding-bottom: 30px;
+    display: block;
+
+    .singleType,
+    .multipleType {
+      width: 100%;
+      padding: 10px 25px;
+      margin: 25px 0;
+    }
+  }
+}
